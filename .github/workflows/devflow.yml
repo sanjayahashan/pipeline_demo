@@ -1,0 +1,78 @@
+name: "Build Dev"
+on:
+  pull_request:
+    branches:
+      - dev
+  push:
+    branches:
+      - dev
+jobs:
+  flutter_test:
+    name: Flutter Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17.x'
+          distribution: 'temurin'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.12'
+      - run: flutter pub get
+      - run: flutter test
+#
+  build:
+    name: Build Dev Android
+    needs: [flutter_test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17.x'
+          distribution: 'temurin'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.12'
+      - run: flutter pub get
+      - run: flutter build apk --debug --flavor dev -t lib/main_dev.dart --split-per-abi
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: android-artifacts
+          path: build/app/outputs/flutter-apk/*
+
+#      - name: push to Release
+#        uses: ncipollo/release-action@v1
+#        with:
+#          artifacts: "build/app/outputs/flutter-apk/*"
+#          tag: v1.0.${{ github.run_number }}
+#          token: ${{ secrets.TOKEN }}
+
+  build_ios:
+    name: Build Dev IOS
+    needs: [ flutter_test ]
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17.x'
+          distribution: 'temurin'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.12'
+      - run: flutter pub get
+      - run: flutter build ipa --debug --flavor dev -t lib/main_dev.dart --no-codesign
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ios-artifacts
+          path: build/ios/archive/*
+
+#        uses: ncipollo/release-action@v1
+#        with:
+#          artifacts: "build/ios/archive/*"
+#          tag: v1.0.${{ github.run_number }}
+#          token: ${{ secrets.TOKEN }}
