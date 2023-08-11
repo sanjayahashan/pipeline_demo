@@ -1,0 +1,2 @@
+json_key_file("gradle\\pc-api-7238742171037521625-630-1d5391032ac4.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.qbitum.pipeline_demo") # e.g. com.krausefx.app
