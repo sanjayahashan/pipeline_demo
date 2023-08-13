@@ -38,7 +38,7 @@ jobs:
           api-level: ${{ matrix.api-level }}
           arch: x86_64
           profile: Nexus 6
-          script: flutter test --flavor dev integration_test
+          script: flutter test -r json --flavor dev integration_test
 
 #  flutter_test:
 #    name: Flutter Test
