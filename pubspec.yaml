@@ -30,6 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  platform_login_credentials:
+    git:
+      url: https://github.com/Qbitum/mobile_login_credentials_comp.git
+      ref: master
 
 
   # The following adds the Cupertino Icons font to your application.
