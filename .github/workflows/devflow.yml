@@ -26,7 +26,7 @@ jobs:
 #      - name: Setup Flutter SDK
 #        uses: subosito/flutter-action@v2
 #        with:
-#          flutter-version: '3.7.12'
+#          flutter-version: '3.13.4'
 #
 #      - name: Install Flutter dependencies
 #        run: flutter pub get
@@ -51,7 +51,7 @@ jobs:
 #          distribution: 'temurin'
 #      - uses: subosito/flutter-action@v2
 #        with:
-#          flutter-version: '3.7.12'
+#          flutter-version: '3.13.4'
 #      - run: flutter pub get
 #      - run: flutter test
 ##
@@ -70,7 +70,7 @@ jobs:
           distribution: 'temurin'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.12'
+          flutter-version: '3.13.4'
       - run: flutter pub get
       - run: flutter build apk --debug --flavor dev -t lib/main_dev.dart --split-per-abi
       - name: Upload Artifacts
@@ -98,7 +98,7 @@ jobs:
 #          distribution: 'temurin'
 #      - uses: subosito/flutter-action@v2
 #        with:
-#          flutter-version: '3.7.12'
+#          flutter-version: '3.13.4'
 #      - run: flutter pub get
 #      - run: flutter build ipa --debug --flavor dev -t lib/main_dev.dart --no-codesign
 #      - name: Upload Artifacts
