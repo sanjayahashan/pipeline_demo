@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  login_component:
+  platform_login_credentials:
     git:
       url: ssh://git@github.com/Qbitum/mobile_login_credentials_comp.git
       ref: master
