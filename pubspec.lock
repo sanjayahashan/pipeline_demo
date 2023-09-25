@@ -70,6 +70,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_dotenv:
+    dependency: transitive
+    description:
+      name: flutter_dotenv
+      sha256: "9357883bdd153ab78cbf9ffa07656e336b8bbb2b5a3ca596b0b27e119f7c7d77"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.0"
   flutter_driver:
     dependency: transitive
     description: flutter
@@ -83,6 +91,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      sha256: f185ac890306b5779ecbd611f52502d8d4d63d27703ef73161ca0407e815f02c
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.16"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -122,6 +138,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.1"
   lints:
     dependency: transitive
     description:
@@ -130,6 +154,55 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  local_auth:
+    dependency: transitive
+    description:
+      name: local_auth
+      sha256: "7e6c63082e399b61e4af71266b012e767a5d4525dd6e9ba41e174fd42d76e115"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.7"
+  local_auth_android:
+    dependency: transitive
+    description:
+      name: local_auth_android
+      sha256: "9ad0b1ffa6f04f4d91e38c2d4c5046583e23f4cae8345776a994e8670df57fb1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.34"
+  local_auth_ios:
+    dependency: transitive
+    description:
+      name: local_auth_ios
+      sha256: "26a8d1ad0b4ef6f861d29921be8383000fda952e323a5b6752cf82ca9cf9a7a9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.4"
+  local_auth_platform_interface:
+    dependency: transitive
+    description:
+      name: local_auth_platform_interface
+      sha256: fc5bd537970a324260fda506cfb61b33ad7426f37a8ea5c461cf612161ebba54
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
+  local_auth_windows:
+    dependency: transitive
+    description:
+      name: local_auth_windows
+      sha256: "505ba3367ca781efb1c50d3132e44a2446bccc4163427bc203b9b4d8994d97ea"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.10"
+  login_component:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: f617ae277ea7bd07c1dbcf8cc5669683aade7401
+      url: "https://github.com/Qbitum/platform_mobile_login_comp.git"
+    source: git
+    version: "1.0.0+1"
   matcher:
     dependency: transitive
     description:
@@ -170,6 +243,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.0"
+  platform_biometric_comp:
+    dependency: transitive
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "5f123a0e43006d5864b99526c6a39cce2f1e1850"
+      url: "https://github.com/Qbitum/platform_mobile_biometric_comp.git"
+    source: git
+    version: "0.0.1"
   platform_login_credentials:
     dependency: "direct main"
     description:
@@ -179,6 +261,14 @@ packages:
       url: "https://github.com/Qbitum/mobile_login_credentials_comp.git"
     source: git
     version: "0.0.1"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      sha256: da3fdfeccc4d4ff2da8f8c556704c08f912542c5fb3cf2233ed75372384a034d
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.6"
   process:
     dependency: transitive
     description:
@@ -187,6 +277,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
+  qbitum_theme_package:
+    dependency: transitive
+    description:
+      path: "."
+      ref: master
+      resolved-ref: eaa5a8edb7b751d2c34eb3ebf596caf8a2c1a368
+      url: "https://github.com/Qbitum/qbitum_theme_package.git"
+    source: git
+    version: "0.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -289,5 +388,5 @@ packages:
     source: hosted
     version: "3.0.2"
 sdks:
-  dart: ">=3.1.0-185.0.dev <4.0.0"
-  flutter: ">=1.17.0"
+  dart: ">=3.1.0 <4.0.0"
+  flutter: ">=3.10.0"

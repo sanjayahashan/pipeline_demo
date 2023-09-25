@@ -64,8 +64,9 @@ jobs:
       - uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: |
-            ${{ secrets.SSH_CREDENTIALS_COMP_KEY }}
             ${{ secrets.SSH_BIOMETRIC_COMP_KEY }}
+            ${{ secrets.SSH_CREDENTIALS_COMP_KEY }}
+            ${{ secrets.SSH_LOGIN_COMP_KEY }}
       - uses: actions/setup-java@v3
         with:
           java-version: '17.x'

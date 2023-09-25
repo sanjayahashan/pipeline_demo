@@ -34,9 +34,9 @@ dependencies:
     git:
       url: https://github.com/Qbitum/mobile_login_credentials_comp.git
       ref: master
-  platform_biometric_comp:
+  login_component:
     git:
-      url: https://github.com/Qbitum/platform_mobile_biometric_comp.git
+      url: https://github.com/Qbitum/platform_mobile_login_comp.git
       ref: master
 
   # The following adds the Cupertino Icons font to your application.
