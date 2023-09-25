@@ -67,6 +67,7 @@ jobs:
             ${{ secrets.SSH_BIOMETRIC_COMP_KEY }}
             ${{ secrets.SSH_CREDENTIALS_COMP_KEY }}
             ${{ secrets.SSH_LOGIN_COMP_KEY }}
+            ${{ secrets.SSH_THEME_KEY }}
       - uses: actions/setup-java@v3
         with:
           java-version: '17.x'
